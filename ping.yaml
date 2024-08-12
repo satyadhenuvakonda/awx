@@ -1,9 +1,10 @@
 ---
-- name: Echo "I am running" on localhost
+- name: Test localhost connection
   gather_facts: no
   hosts: localhost
   connection: local
 
   tasks:
-    - name: Echo "I am running"
-      ansible.builtin.shell: echo "I am running"
+    - name: Print a debug message
+      ansible.builtin.debug:
+        msg: "I am running"
