@@ -2,6 +2,7 @@
 - name: Echo "I am running" on localhost
   gather_facts: no
   hosts: localhost
+  connection: local
 
   tasks:
     - name: Echo "I am running"
