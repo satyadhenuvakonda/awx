@@ -1,8 +1,18 @@
 ---
-- name: Ping all servers
+- name: Echo "I am running" on all servers
   hosts: servers
   gather_facts: no
 
   tasks:
-    - name: Ping the server
-      ansible.builtin.ping:
+    - name: Echo "I am running"
+      ansible.builtin.shell: echo "I am running"
+
+
+# ---
+# - name: Ping all servers
+#   hosts: servers
+#   gather_facts: no
+
+#   tasks:
+#     - name: Ping the server
+#       ansible.builtin.ping:
