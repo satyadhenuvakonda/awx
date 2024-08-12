@@ -1,6 +1,7 @@
 ---
 - name: Echo "I am running" on all servers
   gather_facts: no
+  hosts: localhost
 
   tasks:
     - name: Echo "I am running"
