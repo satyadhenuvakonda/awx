@@ -6,4 +6,4 @@
 
   tasks:
     - name: Echo "I am running"
-      ansible.builtin.shell: echo "I am running"
+      ansible.builtin.shell: echo "I am running VERSION-1"
